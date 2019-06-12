@@ -1,7 +1,7 @@
 vim-cricket
 ===========
 
-Vim plugin to get scores and commentary of live cricket matches
+Vim plugin to get scores and commentary of live Cricket matches
 
 ![Demo](https://i.imgur.com/5gsiiSa.gif)
 
