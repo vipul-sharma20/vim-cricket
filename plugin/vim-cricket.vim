@@ -41,9 +41,16 @@ function! GetScore()
     let commentary_str = join(commentary, "\n\n")
     let commentary_str = substitute(commentary_str, "<[^>]*>", "", "g")
 
+    if has_key(obj, "score")
+        let score = obj["score"]["batting"]["score"]
+        let prev_overs = obj["score"]["prev_overs"]
+    else
+        let score = "NA"
+        let prev_overs = "NA"
+    endif
     let board=printf(g:template, obj["team1"]["name"], obj["team2"]["name"],
-                               \ obj["status"], obj["score"]["batting"]["score"],
-                               \ obj["score"]["prev_overs"], commentary_str)
+                               \ obj["status"], score,
+                               \ prev_overs, commentary_str)
     silent put=board
     :%!fold -w 120
 endfunction
