@@ -8,7 +8,7 @@ let g:template = "%s vs %s\n\n".
                \ "-----\n\n".
                \ "%s\n\n".
                \ "----------------------------\n".
-               \ "Last 3 Overs (Rigth to Left)\n".
+               \ "Last 3 Overs (Right to Left)\n".
                \ "----------------------------\n\n".
                \ "%s\n\n".
                \ "----------\n".
